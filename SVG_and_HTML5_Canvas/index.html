@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Prosjekt 1</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Noto+Serif&family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>The Great Catsby</h1>
+
+		<h3>- Gato PiNegro -</h3>
+
+		<!-- Button to open the modal with the information about the artist-->
+		<button id="modalButton">About the artist</button>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span id="closeModal" class="close">&times;</span>
+				<p>This is the work of the Spanish artist Gato PiNegro. PiNegro is working on taking art to a new level by using web development. In her latest work, "The Great Catsby", she is displaying her love for cats.</p>
+			</div>
+		</div>
+
+		<div class="flexbox">
+			<div class="flexbox-element">
+				<p><h4>(Made with SVG)</h4></p>
+				<svg id="section1" width="620" height="480" style="border: 1px solid #2D3142; background-color: white;">
+					<g id="svg_cat">
+						<!--The cat´s body-->
+						<ellipse id="cat_body" stroke="black" ry="70.5" rx="123.5" cy="360" cx="238" stroke-width="1.5" fill="#BBBBBB"/>
+						<!--The cat´s  legs-->
+						<rect id="cat_leg1" stroke="black" transform="rotate(29,176,448)" height="60" width="15" y="418" x="169" stroke-width="1.5" fill="#BBBBBB"/>
+						<rect id="cat_leg2" stroke="black" transform="rotate(-28,283,450)" height="60" width="15" y="420" x="276" stroke-width="1.5" fill="#BBBBBB"/>
+						<!--The cat´s ears-->
+						<rect id="cat_ear1" transform="rotate(1,336,263)" height="33" width="32" y="246" x="320" stroke-width="1.5" stroke="black" fill="#BBBBBB"/>
+						<rect id="cat_ear2" transform="rotate(-15,384,255)" height="33" width="32" y="238" x="368" stroke-width="1.5" stroke="black" fill="#BBBBBB"/>
+						<!--The cat´s head-->
+						<ellipse id="cat_head" ry="42.5" rx="44" cy="286" cx="365" stroke-width="1.5" stroke="black" fill="#BBBBBB"/>
+						<!--The cat´s tail-->
+						<rect id="cat_tail" stroke="black" transform="rotate(-39.5,96,303)" height="91" width="21" y="257.5" x="85.5" stroke-width="1.5" fill="#BBBBBB"/>
+						<!--The cat´s eyes-->
+						<ellipse id="cat_eye1" stroke="black" ry="5" rx="6" cy="265" cx="348" stroke-width="1.5" fill="black"/>
+						<ellipse id="cat_eye2" stroke="black" ry="5" rx="6" cy="263" cx="374" stroke-width="1.5" fill="black"/>
+						<!--The cat´s nose-->
+						<ellipse id="cat_nose" ry="4" rx="4" cy="288" cx="363" stroke-width="1.5" stroke="black" fill="#FFAFCC"/>
+						<!--Path is used to draw the cat´s mouth-->
+						<line id="cat_mouth_line" x1="363" y1="310" x2="363" y2="292" stroke="black" stroke-width="2" />
+						<path id="cat_mouth_c1" d="M 353 309 q 5 10 10 0" stroke="black" stroke-width="1.5" fill=none />
+						<path id="cat_mouth_c2" d="M 363 309 q 5 10 10 0" stroke="black" stroke-width="1.5" fill=none />
+
+					</>
+					<g id="svg_sun">
+						<ellipse id="sun_circle" fill="yellow" stroke-width="1.5" cx="552" cy="70" rx="43" ry="44" stroke="black"/>
+						<rect id="sun1" fill="yellow" stroke="black" stroke-width="1.5" x="476" y="142" width="89" height="20" transform="rotate(-72 520,152) "/>
+						<rect id="sun2" fill="yellow" stroke="black" stroke-width="1.5" x="421" y="43" width="89" height="20" transform="rotate(9 465,53) "/>
+						<rect id="sun3" fill="yellow" stroke="black" stroke-width="1.5" x="429" y="98" width="89" height="20" transform="rotate(-19 473,108) "/>
+						<rect id="sun4" fill="yellow" stroke="black" stroke-width="1.5" x="553" y="135" width="89" height="20" transform="rotate(-120 597,145) "/>
+						<rect id="sun5" fill="yellow" stroke="black" stroke-width="1.5" x="590" y="84" width="89" height="20" transform="rotate(20 634,94) "/>
+						<rect id="sun6" fill="yellow" stroke="black" stroke-width="1.5" x="586" y="22" width="89" height="20" transform="rotate(-24 630,32) "/>
+						<rect id="sun7" fill="yellow" stroke="black" stroke-width="1.5" x="474" y="-22" width="89" height="20" transform="rotate(-111 518,-12) "/>
+					</g>
+					<g id="svg_speech_bubble">
+						<ellipse id="bubble1" stroke="black" ry="8.5" rx="13.5" cy="202" cx="313" stroke-width="1.5" fill="#5B9BA2"/>
+						<ellipse id="bubble2" ry="11.5" rx="22" cy="181" cx="274.5" stroke-width="1.5" stroke="black" fill="#5B9BA2"/>
+						<ellipse id="bubble3" ry="45" rx="80.5" cy="142.5" cx="171" stroke-width="1.5" stroke="black" fill="#5B9BA2"/>
+						<ellipse id="bubble4" ry="4.5" rx="5" cy="224" cx="335.5"  stroke-width="1.5" stroke="black" fill="#5B9BA2"/>
+						<text stroke="black" transform="matrix(1.5,0,0,1.5,-59,-60)" xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" y="140" x="118.5" stroke-width="0" fill="black">Meow!</text>
+					</g>
+					<g id="svg_cat_tongue">
+						<ellipse id="cat_tongue" ry="6" rx="4" cy="317" cx="363" stroke-width="1.5" stroke="black" fill="#FFAFCC"/>
+					</g>
+					</g>
+				</svg>
+			</div>
+			<div class="flexbox-element">
+				<p><h4>(Made with HTML canvas)</h4></p>
+				<canvas id="section2" width="620" height="480" style="border: 1px solid #2D3142; background-color: white;">
+					Your browser does not support the HTML canvas tag.
+				</canvas>
+			</div>
+		
+		</div>	
+
+		
+		<button id="footerButton">Documentation</button>
+
+		<footer id="myFooter">
+			<h4>Documentation</h4>
+
+			<h5>Implementation of Flexbox-layout</h5>
+			<p>Flexbox-layout is used in my code to structure the two different artworks side by side if the screen is large enough, and under each other if the screen is too small. The two artworks are placed inside each own flexbox-element. The code for this is wirtten in the following two CSS classes: "flexbox" and "flexbox-element". I have also used CSS @media Rule to change the flex-direction attribute on screens smaller than 1240px, making the two artworks stack vertically in stead of horizontally.</p>
+			
+			<h5>Implementation of HTML canvas and SVG</h5>
+			<p>The artwork that appears to the left if the screen is big enough and on top if you are using a smaller screen is made by SVG elements. The SVG elements are implemented directly throughout the HTML code. The elements in the artwork are a combination of circles, rectangles, lines, curves and text. To create a new element I used either the rect(), ellipse(), line(), path() or text() functions and then specified the coordinates, radius or height/width, stroke, stroke-width and then the fill color. By using the transform attribute I can rotate the elements I have made. To make it easier to find the correct positions for the elements and the correct rotation coordinates I used a SVG editor to illustrate the outcome, before hardcoding it in HTML myself. To make the cat meow and show its tongue, which is part of the interactive part of the artwork, the display of both the following IDs: "svg_speech_bubble" and "svg_cat_tongue" is set to "none" by default in the stylesheet. When the user then clicks anywhere on the artwork jQuery is used to show and hide the cat´s tongue, make the speech bubble fade in and out, as well as make the cat meow. I have given all the elements in the artwork an ID, so I can easily change the attributes of the elements. By changing an element´s coordinates I made it possible to make the cat fatter while hovering over "section1".</p>
+			<p>The artwork that appears either to the right or on the bottom of the website is made by HTML canvas. While the SVG elements are mainly implemented in the HTML code, HTML canvas are mainly implemented in the JavaScript file. HTML is only used to specify the size of the canvas, its background color and its border. To create the rectangles, circles and lines in the artwork I have used the rect(), arc() and lineTo() functions before finishing with the stroke() and fill() functions. I have separated the different groups of elements in distinct functions. This makes it easier to for example write the cat´s tongue and the speech bubble and then overwrite it with a combination of the clearRect() function and a new drawing to make it look just like the interactive part when the user click on the artwork made by SVG elements. To make the cat fatter when hovering over "section2", I once again used the clearRect() function before switching between writing the fat- and the original cat.</p>
+			
+			<h5>The use of jQuery</h5>
+			<p>jQuery is used to access elements from the HTML code, primarly by using an element´s ID. To initialize all the click()- and hover() functions I used the $(document).ready() function. In addition to make the cat meow and show its tongue in both of the artworks, the click() functions are used to open and close both the modal and the footer. To make the hover() function work optimally combined with the click() function I used a global state variable to keep track of wether the user is hovering or not. As I mentioned earlier I have also used jQuery to draw all the elements in the artwork made by HTML canvas.</p>
+		
+			<h5>Cross browser testing</h5>
+			<p>I have performed cross browser testing manually. By opening the HTML path in different popular browsers, I made sure everything is compatible for these three popular browsers: </p>
+			<ul style="list-style-type:square">
+				<li>Google Chrome (version 84.0.4147.135)</li>
+				<li>Microsoft Edge (version: 84.0.522.63)</li>
+				<li>Safari (version: 13.1.2)</li>
+			</ul>
+
+			<h5>Sources</h5>
+			<ul style="list-style-type:circle">
+				<li><a href="https://coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354">Color decisions</a></li>
+				<li><a href="https://fonts.google.com/?sidebar.open=true&selection.family=Dancing+Script:wght@600|Noto+Serif">Font decisions</a></li>
+				<li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Learning about HTML, CSS, jQuery and JavaScript</a></li>
+				<li><a href="https://www.w3schools.com/html/html5_canvas.asp">HTML canvas</a></li>
+				<li><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_canvas_clearrect">HTML canvas clearRect</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#:~:text=%3E-,Rotate,point%20(%20x%20%2C%20y%20)%20.">SVG rotation of elements</a></li>
+				<li><a href="https://datacadamia.com/viz/svg/shape/line_straight">SVG Line</a></li>
+				<li><a href="https://www.w3schools.com/graphics/svg_path.asp">SVG Path</a></li>
+				<li><a href="https://editor.method.ac/">SVG Editor</a></li>
+				<li><a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseover_dom">SVG mouseover</a></li>
+				<li><a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">CSS @media Rule</a></li>
+				<li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal">Modal</a></li>
+				<li><a href="https://www.favicon.cc/">Favicon</a></li>
+			</ul>
+
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="index.js"></script>
+
+	</body>
+</html>
